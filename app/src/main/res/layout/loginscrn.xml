@@ -7,7 +7,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/createAccountB"
         android:layout_width="121dp"
         android:layout_height="71dp"
         android:layout_marginStart="236dp"
