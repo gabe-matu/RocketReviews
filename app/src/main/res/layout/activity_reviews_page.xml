@@ -1,12 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReviewsPage"/>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/black">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:src="@drawable/images">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="1.1in"
+                    android:layout_gravity="top"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="Name: Alien Pizza">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:paddingLeft="1.1in"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="Hours: 6am - 9pm ">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:paddingLeft="1.1in"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="Location: 123 Mars Ave">
+                </TextView>
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="100dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp">
+                </Button>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="100dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp">
+                </Button>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="100dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp">
+                </Button>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="100dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp">
+                </Button>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="340dp"
+                    android:layout_marginTop="100dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="10dp">
+                </Button>
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="345dp"
+                    android:layout_marginTop="110dp"
+                    android:text="  5"
+                    android:textColor="@color/white"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="305dp"
+                    android:layout_marginTop="110dp"
+                    android:text="  4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="110dp"
+                    android:text="  3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="110dp"
+                    android:text="  2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginTop="110dp"
+                    android:text="  1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 
-
-
+</LinearLayout>
