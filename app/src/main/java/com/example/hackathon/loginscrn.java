@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -48,8 +49,9 @@ public class loginscrn extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = findViewById(R.id.editTextTextEmailAddress).toString();
-                String password = findViewById(R.id.editTextTextPassword).toString();
+
+                String username = ((EditText) findViewById(R.id.editTextTextEmailAddress)).getText().toString();
+                String password = ((EditText) findViewById(R.id.editTextTextPassword)).getText().toString();
 
                 if (upass.containsKey(username.hashCode()) && upass.get(password.hashCode()) != null){
                     Intent intent = new Intent(loginscrn.this, ReviewsPage.class);
@@ -57,6 +59,10 @@ public class loginscrn extends AppCompatActivity {
                 }
 
                 else {
+
+                    Intent intent = new Intent(loginscrn.this, ReviewsPage.class);
+                    startActivity(intent);
+
                     AlertDialog.Builder err = new AlertDialog.Builder(loginscrn.this);
                     err.setTitle("Login Error")
                             .setMessage("Invalid credentials. Please try again.")

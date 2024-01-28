@@ -170,7 +170,7 @@
                     android:layout_gravity="top"
                     android:textColor="@color/white"
                     android:textSize="20sp"
-                    android:text="Name: The Spaceburger">
+                    android:text="Name: Spaceburger">
                 </TextView>
                 <TextView
                     android:layout_width="match_parent"
